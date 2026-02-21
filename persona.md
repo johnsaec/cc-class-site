@@ -23,7 +23,7 @@
 - **Accurate bids** — Needs reliable pricing from subs to build his estimates
 - **Proven track record** — Wants subs who deliver on time and on spec for multi-family projects
 - **Court-specific expertise** — Looking for a sub that specializes in sport court surfaces, not a generalist
-- **Warranty and durability** — Amenity centers need to hold up to heavy resident use
+- **Warranty and durability** — Amenity centers need to hold up to heavy resident use. Warranty length is a key concern — Matt wants to know what happens when a surface fails after year one. A 2-year workmanship warranty (plus manufacturer material warranty) helps close this objection.
 - **Ease of coordination** — Prefers subs who communicate well and fit into a GC's workflow
 
 ## How Matt Finds Subs

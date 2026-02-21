@@ -31,6 +31,7 @@ The output is a clear dollar amount showing how much Matt saves over the project
 |---|---|---|
 | Number of courts | 2 | Slider or number input (1-8) |
 | Court type | Pickleball | Dropdown: Tennis, Pickleball, Multi-Sport |
+| Warranty coverage | 2 years | Pro Court's 2-year workmanship warranty + manufacturer material warranty vs. cheap subs who typically offer 0-1 year |
 | Cheap sub bid per court | $6,000 | Editable — represents the low-ball competitor |
 | Pro Court bid per court | $10,000 | Editable — represents our actual pricing |
 | Number of projects per year | 3 | How many projects Matt's GC does annually with courts |

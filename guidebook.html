@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The GC's Guide to Pickleball Court Construction | Pro Court Surfaces</title>
+    <meta name="description" content="Free guide for general contractors: pickleball court specs, budgeting, surface systems, and scope planning. Built for estimators bidding amenity center projects.">
+    <link rel="canonical" href="https://cc-class-site.vercel.app/guidebook">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "The GC's Guide to Pickleball Court Construction",
+        "description": "Free guide for general contractors covering pickleball court specs, budgeting, surface systems, and scope planning.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Pro Court Surfaces"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free PDF guide for general contractors"
+        }
+    }
+    </script>
+
+    <!-- Fonts: Instrument Serif (display) + Outfit (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #0c0f0e;
+            --bg-card: #151a18;
+            --bg-elevated: #1c2320;
+            --surface: #232a27;
+            --border: #2e3833;
+            --border-light: #3a4540;
+            --text-primary: #e8ece9;
+            --text-secondary: #8a9690;
+            --text-muted: #5c6b64;
+            --accent: #c8a24e;
+            --accent-light: #dbb964;
+            --accent-dim: rgba(200, 162, 78, 0.12);
+            --danger: #c44e4e;
+            --success: #4ec47a;
+            --font-display: 'Instrument Serif', Georgia, serif;
+            --font-body: 'Outfit', system-ui, sans-serif;
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Grain texture overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.025;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* ═══════════════════ NAVIGATION ═══════════════════ */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1.25rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(12, 15, 14, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.85rem;
+            letter-spacing: 0.03em;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        nav ul a:hover {
+            color: var(--text-primary);
+            background: var(--accent-dim);
+        }
+
+        /* ═══════════════════ BUTTONS ═══════════════════ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.02em;
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out);
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg-dark);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(200, 162, 78, 0.25);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--text-secondary);
+            color: var(--text-primary);
+        }
+
+        /* ═══════════════════ HERO ═══════════════════ */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 8rem 3rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--accent-dim) 0%, transparent 60%);
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 2;
+            max-width: 620px;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeUp 0.8s var(--ease-out) 0.2s forwards;
+        }
+
+        .hero-eyebrow::before {
+            content: '';
+            width: 32px;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: 4.2rem;
+            font-weight: 400;
+            line-height: 1.08;
+            letter-spacing: -1.5px;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeUp 0.8s var(--ease-out) 0.4s forwards;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            max-width: 480px;
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            animation: fadeUp 0.8s var(--ease-out) 0.6s forwards;
+        }
+
+        .guide-highlights {
+            list-style: none;
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            animation: fadeUp 0.8s var(--ease-out) 0.7s forwards;
+        }
+
+        .guide-highlights li {
+            padding: 0.5rem 0;
+            padding-left: 1.75rem;
+            position: relative;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .guide-highlights li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* ═══════════════════ FORM PANEL ═══════════════════ */
+        .form-panel {
+            position: relative;
+            z-index: 2;
+            justify-self: center;
+            width: 100%;
+            max-width: 420px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            opacity: 0;
+            animation: fadeUp 0.8s var(--ease-out) 0.8s forwards;
+        }
+
+        .form-panel h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .form-panel .form-subtitle {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .form-field {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-field label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+            display: block;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .form-field input {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            font-family: var(--font-body);
+            transition: border-color 0.3s;
+        }
+
+        .form-field input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-field input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .form-panel .btn-primary {
+            width: 100%;
+            justify-content: center;
+            padding: 1rem 2rem;
+            margin-top: 0.5rem;
+        }
+
+        .form-note {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        /* ═══════════════════ SUCCESS / ERROR ═══════════════════ */
+        .form-message {
+            display: none;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        .form-message.visible {
+            display: block;
+        }
+
+        .form-message.success .message-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-message.success h3 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--success);
+        }
+
+        .form-message.success p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .form-message.error h3 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--danger);
+        }
+
+        .form-message.error p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* ═══════════════════ FOOTER ═══════════════════ */
+        footer {
+            background: var(--bg-dark);
+            border-top: 1px solid var(--border);
+            padding: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        footer span {
+            color: var(--accent);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--accent-light);
+        }
+
+        /* ═══════════════════ ANIMATIONS ═══════════════════ */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ═══════════════════ SPINNER ═══════════════════ */
+        .spinner {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--bg-dark);
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* ═══════════════════ RESPONSIVE ═══════════════════ */
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 7rem 2rem 4rem;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .form-panel {
+                justify-self: start;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .hero {
+                padding: 6rem 1.5rem 3rem;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="https://cc-class-site.vercel.app/" class="logo">Pro Court <span>Surfaces</span></a>
+        <ul>
+            <li><a href="https://cc-class-site.vercel.app/#scope">Services</a></li>
+            <li><a href="https://cc-class-site.vercel.app/#roi">Calculator</a></li>
+            <li><a href="https://cc-class-site.vercel.app/#quote" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.82rem;">Request a Bid</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero + Form -->
+    <section class="hero">
+        <div class="hero-text">
+            <div class="hero-eyebrow">Free Guide for General Contractors</div>
+            <h1>The GC's Guide to <em>Pickleball Court Construction</em></h1>
+            <p class="hero-subtitle">Everything your estimator needs to scope, budget, and bid pickleball court projects — from slab specs to surface system selection.</p>
+            <ul class="guide-highlights">
+                <li>Court dimensions, setbacks, and layout standards</li>
+                <li>Surface system comparison — what holds up and what doesn't</li>
+                <li>Realistic budgeting ranges per court</li>
+                <li>Scope breakdown — what's yours vs. what's the surfacing sub's</li>
+                <li>Common bid mistakes that lead to change orders</li>
+            </ul>
+        </div>
+
+        <div class="form-panel" id="form-panel">
+            <div id="form-container">
+                <h2>Get the Free Guide</h2>
+                <p class="form-subtitle">We'll email you the PDF. No spam, no drip campaigns — just the guide.</p>
+                <form id="guidebook-form">
+                    <div class="form-field">
+                        <label for="gb-name">Your Name</label>
+                        <input type="text" id="gb-name" name="name" placeholder="Matt Johnson" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="gb-email">Email</label>
+                        <input type="email" id="gb-email" name="email" placeholder="matt@fazzon.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="gb-phone">Phone <span style="font-weight:400; text-transform:none; letter-spacing:0;">(optional)</span></label>
+                        <input type="tel" id="gb-phone" name="phone" placeholder="(512) 555-0100">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Get the Free Guide</button>
+                </form>
+                <p class="form-note">We respect your inbox. One email with the guide — that's it.</p>
+            </div>
+
+            <div class="form-message success" id="success-message">
+                <div class="message-icon">&#9993;</div>
+                <h3>Check Your Inbox</h3>
+                <p>Your pickleball court guide is on its way. Check your email in the next few minutes — it'll come from Pro Court Surfaces.</p>
+            </div>
+
+            <div class="form-message error" id="error-message">
+                <h3>Something went wrong</h3>
+                <p id="error-text">Please try again or email us directly at patrick@procourtsurfaces.com.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <span>Pro Court Surfaces</span></p>
+        <p><a href="https://cc-class-site.vercel.app/">Back to main site</a> &bull; Sport Court Surfacing Subcontractor &bull; Central Texas</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+    (function() {
+        var form = document.getElementById('guidebook-form');
+        var submitBtn = document.getElementById('submit-btn');
+        var formContainer = document.getElementById('form-container');
+        var successMsg = document.getElementById('success-message');
+        var errorMsg = document.getElementById('error-message');
+        var errorText = document.getElementById('error-text');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            var name = document.getElementById('gb-name').value.trim();
+            var email = document.getElementById('gb-email').value.trim();
+            var phone = document.getElementById('gb-phone').value.trim();
+
+            if (!name || !email) return;
+
+            // Basic email check
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                errorText.textContent = 'Please enter a valid email address.';
+                errorMsg.classList.add('visible');
+                return;
+            }
+
+            // Disable button + show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
+            errorMsg.classList.remove('visible');
+
+            fetch('/api/guidebook-download', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: name, email: email, phone: phone || undefined })
+            })
+            .then(function(res) { return res.json().then(function(data) { return { ok: res.ok, data: data }; }); })
+            .then(function(result) {
+                if (result.ok) {
+                    formContainer.style.display = 'none';
+                    successMsg.classList.add('visible');
+                } else {
+                    errorText.textContent = result.data.error || 'Something went wrong. Please try again.';
+                    errorMsg.classList.add('visible');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Get the Free Guide';
+                }
+            })
+            .catch(function() {
+                errorText.textContent = 'Network error. Please check your connection and try again.';
+                errorMsg.classList.add('visible');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Get the Free Guide';
+            });
+        });
+    })();
+    </script>
+
+</body>
+</html>

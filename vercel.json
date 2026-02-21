@@ -1,0 +1,14 @@
+{
+  "cleanUrls": true,
+  "crons": [
+    {
+      "path": "/api/competitor-monitor",
+      "schedule": "0 13 * * *"
+    }
+  ],
+  "functions": {
+    "api/competitor-monitor.ts": {
+      "maxDuration": 60
+    }
+  }
+}

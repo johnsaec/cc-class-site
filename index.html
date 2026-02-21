@@ -3,7 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Court Surfaces | Professional Sport Court Installation</title>
+    <title>Pro Court Surfaces | Sport Court Surfacing Subcontractor in Central Texas</title>
+    <meta name="description" content="Pro Court Surfaces is a sport court surfacing subcontractor in Central Texas. We install ATS Sports Acrytech tennis and pickleball court surfaces for general contractors building multi-family amenity centers.">
+    <link rel="canonical" href="https://cc-class-site.vercel.app/">
+
+    <!-- Schema Markup for Local Business SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Pro Court Surfaces",
+        "description": "Sport court surfacing subcontractor specializing in tennis and pickleball court surfaces for multi-family amenity centers in Central Texas.",
+        "areaServed": {
+            "@type": "Place",
+            "name": "Central Texas"
+        },
+        "serviceType": ["Sport Court Surfacing", "Tennis Court Surfacing", "Pickleball Court Surfacing"],
+        "knowsAbout": ["ATS Sports Acrytech", "Acrylic Sport Court Surfaces", "Multi-Family Amenity Centers"]
+    }
+    </script>
+
+    <!-- FAQ Schema for AEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What surface system does Pro Court Surfaces install?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We install ATS Sports Acrytech acrylic sport court surfaces. Acrytech is a professional-grade system designed for high-traffic environments like multi-family amenity centers, delivering consistent playability and long-term durability in the Central Texas climate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Pro Court Surfaces work as a subcontractor for general contractors?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We work exclusively as a surfacing subcontractor for general contractors. We handle the sport court surface scope only — no fencing, lighting, or accessories — so there is zero overlap with your other trades."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What areas does Pro Court Surfaces serve?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We serve the Central Texas region, including Austin, San Antonio, Waco, and surrounding areas."
+                }
+            }
+        ]
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -22,7 +75,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.97);
             backdrop-filter: blur(10px);
             padding: 1rem 2rem;
             display: flex;
@@ -82,29 +135,27 @@
             right: -20%;
             width: 600px;
             height: 600px;
-            background: rgba(233, 69, 96, 0.15);
-            border-radius: 50%;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 400px;
-            height: 400px;
-            background: rgba(59, 149, 211, 0.1);
+            background: rgba(233, 69, 96, 0.12);
             border-radius: 50%;
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 820px;
             position: relative;
             z-index: 1;
         }
 
+        .hero-eyebrow {
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 1.25rem;
+        }
+
         .hero h1 {
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-weight: 800;
             line-height: 1.15;
             margin-bottom: 1.5rem;
@@ -116,9 +167,9 @@
         }
 
         .hero p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: rgba(255, 255, 255, 0.8);
-            max-width: 600px;
+            max-width: 640px;
             margin: 0 auto 2.5rem;
         }
 
@@ -130,6 +181,7 @@
             font-weight: 600;
             font-size: 1rem;
             transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -140,6 +192,7 @@
         .btn-primary {
             background: #e94560;
             color: #fff;
+            border: none;
         }
 
         .btn-outline {
@@ -154,7 +207,12 @@
 
         /* Section shared */
         section {
-            padding: 6rem 2rem;
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
         }
 
         .section-label {
@@ -167,7 +225,7 @@
         }
 
         .section-title {
-            font-size: 2.4rem;
+            font-size: 2.2rem;
             font-weight: 800;
             color: #1a1a2e;
             margin-bottom: 1rem;
@@ -175,73 +233,114 @@
         }
 
         .section-subtitle {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #666;
-            max-width: 600px;
+            max-width: 640px;
             margin-bottom: 3rem;
         }
 
-        /* What We Do */
-        .what-we-do {
+        /* Straight Talk */
+        .straight-talk {
             background: #f8f9fa;
         }
 
-        .what-we-do .container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .services-grid {
+        .talk-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 1rem;
         }
 
-        .service-card {
+        .talk-card {
             background: #fff;
             padding: 2.5rem 2rem;
             border-radius: 16px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #e94560;
         }
 
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+        .talk-card .objection {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #999;
+            margin-bottom: 0.75rem;
+            font-style: italic;
         }
 
-        .service-icon {
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, #0f4c75, #3b95d3);
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .service-card h3 {
-            font-size: 1.2rem;
+        .talk-card h3 {
+            font-size: 1.15rem;
             margin-bottom: 0.75rem;
             color: #1a1a2e;
         }
 
-        .service-card p {
-            color: #666;
+        .talk-card p {
+            color: #555;
             font-size: 0.95rem;
         }
 
-        /* Why It Matters */
-        .why-it-matters {
+        /* Scope */
+        .scope {
             background: #fff;
         }
 
-        .why-it-matters .container {
-            max-width: 1100px;
-            margin: 0 auto;
+        .scope-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .scope-box {
+            padding: 2rem;
+            border-radius: 16px;
+        }
+
+        .scope-yes {
+            background: #f0faf0;
+            border: 2px solid #c3e6c3;
+        }
+
+        .scope-no {
+            background: #faf0f0;
+            border: 2px solid #e6c3c3;
+        }
+
+        .scope-box h3 {
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+            color: #1a1a2e;
+        }
+
+        .scope-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .scope-box li {
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+            color: #555;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .scope-yes li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            color: #2a9d2a;
+            font-weight: 700;
+        }
+
+        .scope-no li::before {
+            content: '\2717';
+            position: absolute;
+            left: 0;
+            color: #d63851;
+            font-weight: 700;
+        }
+
+        /* Why GCs */
+        .why-gcs {
+            background: #f8f9fa;
         }
 
         .benefits-grid {
@@ -255,18 +354,15 @@
             gap: 1.25rem;
             padding: 1.5rem;
             border-radius: 12px;
-            transition: background 0.3s;
-        }
-
-        .benefit-item:hover {
-            background: #f8f9fa;
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
         }
 
         .benefit-number {
             flex-shrink: 0;
             width: 44px;
             height: 44px;
-            background: linear-gradient(135deg, #e94560, #d63851);
+            background: linear-gradient(135deg, #0f4c75, #3b95d3);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -277,7 +373,7 @@
         }
 
         .benefit-item h3 {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 0.4rem;
             color: #1a1a2e;
         }
@@ -287,31 +383,354 @@
             font-size: 0.9rem;
         }
 
-        /* CTA */
-        .cta {
+        /* FAQ */
+        .faq {
+            background: #fff;
+        }
+
+        .faq-list {
+            max-width: 760px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e8e8e8;
+            padding: 1.5rem 0;
+        }
+
+        .faq-item h3 {
+            font-size: 1.05rem;
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* ROI Calculator */
+        .roi-calculator {
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        .roi-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .roi-inputs {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 16px;
+        }
+
+        .roi-inputs h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #1a1a2e;
+        }
+
+        .roi-field {
+            margin-bottom: 1.25rem;
+        }
+
+        .roi-field label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 0.35rem;
+        }
+
+        .roi-field input,
+        .roi-field select {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: #1a1a2e;
+            background: #fff;
+            transition: border-color 0.3s;
+        }
+
+        .roi-field input:focus,
+        .roi-field select:focus {
+            outline: none;
+            border-color: #0f4c75;
+        }
+
+        .roi-field .input-hint {
+            font-size: 0.78rem;
+            color: #999;
+            margin-top: 0.25rem;
+        }
+
+        .roi-results {
+            position: sticky;
+            top: 100px;
+        }
+
+        .roi-hero-number {
             background: linear-gradient(135deg, #0f4c75 0%, #1b262c 100%);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
             text-align: center;
             color: #fff;
+            margin-bottom: 2rem;
         }
 
-        .cta .section-label {
+        .roi-hero-number .savings-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .roi-hero-number .savings-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: #4ade80;
+        }
+
+        .roi-hero-number .savings-context {
+            font-size: 0.95rem;
             color: rgba(255, 255, 255, 0.6);
+            margin-top: 0.5rem;
         }
 
-        .cta .section-title {
+        .roi-breakdown {
+            background: #f8f9fa;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .roi-breakdown-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background: #1a1a2e;
             color: #fff;
-            max-width: 700px;
-            margin: 0 auto 1rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .cta .section-subtitle {
+        .roi-breakdown-header span {
+            padding: 1rem;
+        }
+
+        .roi-breakdown-header span:not(:first-child) {
+            text-align: right;
+        }
+
+        .roi-breakdown-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom: 1px solid #e8e8e8;
+            font-size: 0.9rem;
+        }
+
+        .roi-breakdown-row span {
+            padding: 0.85rem 1rem;
+        }
+
+        .roi-breakdown-row span:not(:first-child) {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .roi-breakdown-row .cheap-val {
+            color: #d63851;
+        }
+
+        .roi-breakdown-row .pro-val {
+            color: #0f4c75;
+        }
+
+        .roi-breakdown-row.total-row {
+            background: #eef;
+            font-weight: 700;
+            border-bottom: none;
+        }
+
+        .roi-breakdown-row.total-row span {
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
+        .roi-bar-compare {
+            margin-top: 2rem;
+        }
+
+        .roi-bar-compare h4 {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .roi-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .roi-bar-label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            width: 100px;
+            flex-shrink: 0;
+            color: #555;
+        }
+
+        .roi-bar-track {
+            flex: 1;
+            height: 32px;
+            background: #e8e8e8;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .roi-bar-fill {
+            height: 100%;
+            border-radius: 8px;
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #fff;
+            min-width: 80px;
+        }
+
+        .roi-bar-fill.cheap {
+            background: linear-gradient(90deg, #e94560, #d63851);
+        }
+
+        .roi-bar-fill.pro {
+            background: linear-gradient(90deg, #0f4c75, #3b95d3);
+        }
+
+        .roi-cta {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .roi-cta p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .roi-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .roi-hero-number .savings-amount {
+                font-size: 2.2rem;
+            }
+
+            .roi-breakdown-header,
+            .roi-breakdown-row {
+                font-size: 0.78rem;
+            }
+
+            .roi-breakdown-row span,
+            .roi-breakdown-header span {
+                padding: 0.7rem 0.5rem;
+            }
+        }
+
+        /* Quote Form */
+        .quote-form-section {
+            background: linear-gradient(135deg, #0f4c75 0%, #1b262c 100%);
+            color: #fff;
+        }
+
+        .quote-form-section .section-label {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .quote-form-section .section-title {
+            color: #fff;
+        }
+
+        .quote-form-section .section-subtitle {
             color: rgba(255, 255, 255, 0.7);
-            margin: 0 auto 2.5rem;
         }
 
-        .cta .btn-primary {
-            padding: 1.1rem 3rem;
+        .quote-form {
+            max-width: 600px;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .quote-form label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+
+        .quote-form input,
+        .quote-form select,
+        .quote-form textarea {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .quote-form input::placeholder,
+        .quote-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        .quote-form input:focus,
+        .quote-form select:focus,
+        .quote-form textarea:focus {
+            outline: none;
+            border-color: #e94560;
+        }
+
+        .quote-form select option {
+            background: #1b262c;
+            color: #fff;
+        }
+
+        .quote-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .quote-form .btn-primary {
+            justify-self: start;
+            padding: 1rem 3rem;
             font-size: 1.05rem;
+            margin-top: 0.5rem;
         }
 
         /* Footer */
@@ -326,11 +745,11 @@
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
 
             .hero p {
-                font-size: 1.05rem;
+                font-size: 1rem;
             }
 
             .btn-outline {
@@ -339,7 +758,12 @@
                 width: fit-content;
             }
 
-            .benefits-grid {
+            .benefits-grid,
+            .scope-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
                 grid-template-columns: 1fr;
             }
 
@@ -348,7 +772,7 @@
             }
 
             .section-title {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
             }
         }
     </style>
@@ -359,98 +783,439 @@
     <nav>
         <div class="logo">Pro Court <span>Surfaces</span></div>
         <ul>
-            <li><a href="#what-we-do">Services</a></li>
-            <li><a href="#why-it-matters">Why Us</a></li>
-            <li><a href="#cta">Contact</a></li>
+            <li><a href="#scope">Our Scope</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#roi">ROI Calculator</a></li>
+            <li><a href="#quote">Get a Quote</a></li>
         </ul>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero — speaks directly to GC estimators -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Expert Sport Court Surfaces <span>Built to Perform</span></h1>
-            <p>We supply and install premium court surfaces for tennis, basketball, pickleball, and more — giving general contractors a trusted specialty partner they can count on.</p>
-            <a href="#cta" class="btn btn-primary">Get a Quote</a>
-            <a href="#what-we-do" class="btn btn-outline">Learn More</a>
+            <div class="hero-eyebrow">Sport Court Surfacing Subcontractor &bull; Central Texas</div>
+            <h1>Your Amenity Center Courts <span>Done Right the First Time</span></h1>
+            <p>We're the surfacing sub GCs in Central Texas call when the courts have to look good, play right, and hold up to hundreds of residents. ATS Sports Acrytech surfaces — installed on schedule.</p>
+            <a href="#quote" class="btn btn-primary">Request a Bid</a>
+            <a href="#scope" class="btn btn-outline">See Our Scope</a>
         </div>
     </section>
 
-    <!-- What We Do -->
-    <section class="what-we-do" id="what-we-do">
+    <!-- Straight Talk — address skepticism head-on -->
+    <section class="straight-talk" id="straight-talk">
         <div class="container">
-            <div class="section-label">What We Do</div>
-            <div class="section-title">Professional Court Surfaces, Start to Finish</div>
-            <div class="section-subtitle">From surface selection to final line striping, Pro Court Surfaces handles every detail so you can focus on the bigger build.</div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">&#127934;</div>
-                    <h3>Court Surface Installation</h3>
-                    <p>Acrylic, cushioned, and modular tile systems for tennis, pickleball, basketball, and multi-sport courts — installed to manufacturer spec.</p>
+            <div class="section-label">Straight Talk</div>
+            <div class="section-title">We Know What You're Thinking</div>
+            <div class="section-subtitle">You've been burned by subs before. Here's how we're different.</div>
+            <div class="talk-grid">
+                <div class="talk-card">
+                    <div class="objection">"Last court sub ghosted us mid-project."</div>
+                    <h3>We show up. Every day we're scheduled.</h3>
+                    <p>Court surfacing is all we do — not a side job. You get a dedicated crew that communicates daily and stays until the scope is closed out. No chasing us down.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">&#128736;</div>
-                    <h3>Resurfacing &amp; Repair</h3>
-                    <p>Crack repair, color coating, and full resurfacing to restore worn courts to like-new condition with minimal downtime on your project.</p>
+                <div class="talk-card">
+                    <div class="objection">"The surface failed within a year."</div>
+                    <h3>ATS Sports Acrytech doesn't fail.</h3>
+                    <p>We install ATS Sports Acrytech — a professional-grade acrylic system built for Central Texas heat and high-traffic amenity centers. It's backed by manufacturer warranties, and we stand behind our install.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">&#128205;</div>
-                    <h3>Custom Line Striping &amp; Design</h3>
-                    <p>Precise game lines, custom logos, and multi-sport layouts so the finished court meets your client's exact vision.</p>
+                <div class="talk-card">
+                    <div class="objection">"I can't get a straight number for my estimate."</div>
+                    <h3>You'll have a detailed bid in 48 hours.</h3>
+                    <p>We know you're building an estimate for your GC. We send clear, line-item pricing — surface prep, materials, labor, striping — so you can plug our numbers in and move on.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why It Matters -->
-    <section class="why-it-matters" id="why-it-matters">
+    <!-- Clean Scope Definition -->
+    <section class="scope" id="scope">
         <div class="container">
-            <div class="section-label">Why Contractors Choose Us</div>
-            <div class="section-title">Your Competitive Edge on Court Projects</div>
-            <div class="section-subtitle">Partnering with a dedicated court specialist means fewer headaches, better results, and clients who come back.</div>
+            <div class="section-label">Scope of Work</div>
+            <div class="section-title">Sport Court Surfacing for Multi-Family Amenity Centers</div>
+            <div class="section-subtitle">We do one thing and we do it well. Zero scope overlap with your other trades.</div>
+            <div class="scope-grid">
+                <div class="scope-box scope-yes">
+                    <h3>What We Handle</h3>
+                    <ul>
+                        <li>Tennis court surfacing (ATS Sports Acrytech)</li>
+                        <li>Pickleball court surfacing</li>
+                        <li>Multi-sport court surfaces</li>
+                        <li>Surface preparation and repair</li>
+                        <li>Acrylic color coating systems</li>
+                        <li>Game line striping and court markings</li>
+                        <li>Resurfacing and recoating existing courts</li>
+                    </ul>
+                </div>
+                <div class="scope-box scope-no">
+                    <h3>What's Not Our Scope</h3>
+                    <ul>
+                        <li>Fencing and windscreens</li>
+                        <li>Lighting and electrical</li>
+                        <li>Net posts and accessories</li>
+                        <li>Concrete / asphalt base work</li>
+                        <li>Drainage and grading</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why GCs Choose Us -->
+    <section class="why-gcs" id="why-us">
+        <div class="container">
+            <div class="section-label">Why GCs Choose Us</div>
+            <div class="section-title">Built for How Contractors Actually Work</div>
+            <div class="section-subtitle">We've worked inside GC timelines on multi-family projects. We know what matters to you.</div>
             <div class="benefits-grid">
                 <div class="benefit-item">
                     <div class="benefit-number">1</div>
                     <div>
-                        <h3>One Less Thing to Manage</h3>
-                        <p>We handle the entire court surface scope — materials, prep, installation, and finishing — so you can keep your crew focused on what they do best.</p>
+                        <h3>Fast, Accurate Bids</h3>
+                        <p>Detailed line-item pricing within 48 hours. No vague allowances — real numbers you can put in your estimate and stand behind.</p>
                     </div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-number">2</div>
                     <div>
-                        <h3>On-Time, On-Budget</h3>
-                        <p>We understand construction timelines. We show up when scheduled, work efficiently, and communicate proactively if anything changes.</p>
+                        <h3>We Fit Your Schedule</h3>
+                        <p>We coordinate around your construction timeline. When the slab is ready, we're ready. No delays holding up your other trades.</p>
                     </div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-number">3</div>
                     <div>
-                        <h3>Professional Results That Reflect on You</h3>
-                        <p>A flawless court finish elevates your entire project. Our work makes you look good to clients, architects, and property owners.</p>
+                        <h3>Quality That Doesn't Come Back</h3>
+                        <p>ATS Sports Acrytech surfaces are built for Central Texas conditions — UV stable, crack resistant, and designed for years of heavy resident use without callbacks.</p>
                     </div>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-number">4</div>
                     <div>
-                        <h3>Licensed, Insured &amp; Warranty-Backed</h3>
-                        <p>Full liability coverage and manufacturer-backed warranties give you and your clients peace of mind long after the project wraps.</p>
+                        <h3>Clean Scope, No Surprises</h3>
+                        <p>Surfacing only. We don't creep into other trades' territory. You know exactly what you're getting, and so does the owner.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta" id="cta">
-        <div class="section-label">Get Started</div>
-        <div class="section-title">Ready to Add Court Expertise to Your Next Project?</div>
-        <div class="section-subtitle">Whether you're bidding a new build or need a subcontractor for an active job, we'll get you a fast, accurate quote.</div>
-        <a href="mailto:info@procourtsurfaces.com" class="btn btn-primary">Request a Quote</a>
+    <!-- FAQ — optimized for AEO -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-label">Frequently Asked Questions</div>
+            <div class="section-title">Questions GCs Ask Us</div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>What surface system do you install?</h3>
+                    <p>We install ATS Sports Acrytech — a professional-grade acrylic sport court surface system. It's engineered for high-traffic environments like multi-family amenity centers and holds up to the Central Texas heat and UV exposure.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work as a subcontractor under a GC?</h3>
+                    <p>Yes. That's our primary model. We carry our own insurance, provide W-9s, and work within your project management structure. We're used to GC workflows — submittals, schedules, site meetings, all of it.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What do you need from us before you can bid?</h3>
+                    <p>Court dimensions, surface type (tennis, pickleball, multi-sport), color preferences, and your project timeline. If you have site plans, even better — send them over and we'll turn around a bid in 48 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does a typical court surfacing job take?</h3>
+                    <p>Most amenity center courts take 5-10 business days depending on court count and weather. We'll give you an exact timeline in our bid so you can plan your schedule around it.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What areas do you serve?</h3>
+                    <p>We serve the Central Texas region — Austin, San Antonio, Waco, and surrounding areas. If your project is in Central Texas, we can get there.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are your surfaces warrantied?</h3>
+                    <p>Yes. ATS Sports Acrytech surfaces come with manufacturer warranties, and we warranty our installation workmanship separately. We'll provide warranty documentation for your project closeout package.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- ROI Calculator -->
+    <section class="roi-calculator" id="roi">
+        <div class="container">
+            <div class="section-label">ROI Calculator</div>
+            <div class="section-title">See the True Cost Before You Award the Bid</div>
+            <div class="section-subtitle">The cheapest bid isn't the cheapest project. Plug in your numbers and see what callbacks, delays, and early resurfacing actually cost over 10 years.</div>
+            <div class="roi-layout">
+                <div class="roi-inputs">
+                    <h3>Your Project Details</h3>
+                    <div class="roi-field">
+                        <label for="roi-courts">Number of Courts</label>
+                        <input type="range" id="roi-courts" min="1" max="8" value="2">
+                        <div class="input-hint"><span id="roi-courts-display">2</span> courts</div>
+                    </div>
+                    <div class="roi-field">
+                        <label for="roi-type">Court Type</label>
+                        <select id="roi-type">
+                            <option value="pickleball">Pickleball</option>
+                            <option value="tennis">Tennis</option>
+                            <option value="multi">Multi-Sport</option>
+                        </select>
+                    </div>
+                    <div class="roi-field">
+                        <label for="roi-cheap-bid">Cheapest Sub Bid (per court)</label>
+                        <input type="number" id="roi-cheap-bid" value="6000" min="1000" max="50000" step="500">
+                        <div class="input-hint">The low-ball number you got</div>
+                    </div>
+                    <div class="roi-field">
+                        <label for="roi-pro-bid">Pro Court Bid (per court)</label>
+                        <input type="number" id="roi-pro-bid" value="10000" min="1000" max="50000" step="500">
+                        <div class="input-hint">Our bid with ATS Acrytech</div>
+                    </div>
+                    <div class="roi-field">
+                        <label for="roi-projects">Court Projects per Year</label>
+                        <input type="range" id="roi-projects" min="1" max="12" value="3">
+                        <div class="input-hint"><span id="roi-projects-display">3</span> projects / year</div>
+                    </div>
+                </div>
+
+                <div class="roi-results">
+                    <div class="roi-hero-number">
+                        <div class="savings-label">10-Year Savings with Pro Court</div>
+                        <div class="savings-amount" id="roi-savings">$0</div>
+                        <div class="savings-context">across all projects over 10 years</div>
+                    </div>
+
+                    <div class="roi-breakdown">
+                        <div class="roi-breakdown-header">
+                            <span>Cost Category</span>
+                            <span>Cheap Sub</span>
+                            <span>Pro Court</span>
+                        </div>
+                        <div class="roi-breakdown-row">
+                            <span>Install Cost</span>
+                            <span class="cheap-val" id="row-install-cheap">—</span>
+                            <span class="pro-val" id="row-install-pro">—</span>
+                        </div>
+                        <div class="roi-breakdown-row">
+                            <span>Callbacks &amp; Rework</span>
+                            <span class="cheap-val" id="row-callback-cheap">—</span>
+                            <span class="pro-val" id="row-callback-pro">—</span>
+                        </div>
+                        <div class="roi-breakdown-row">
+                            <span>Schedule Delays</span>
+                            <span class="cheap-val" id="row-delay-cheap">—</span>
+                            <span class="pro-val" id="row-delay-pro">—</span>
+                        </div>
+                        <div class="roi-breakdown-row">
+                            <span>Change Orders</span>
+                            <span class="cheap-val" id="row-co-cheap">—</span>
+                            <span class="pro-val" id="row-co-pro">—</span>
+                        </div>
+                        <div class="roi-breakdown-row">
+                            <span>Resurfacing (10yr)</span>
+                            <span class="cheap-val" id="row-resurface-cheap">—</span>
+                            <span class="pro-val" id="row-resurface-pro">—</span>
+                        </div>
+                        <div class="roi-breakdown-row total-row">
+                            <span>10-Year Total</span>
+                            <span class="cheap-val" id="row-total-cheap">—</span>
+                            <span class="pro-val" id="row-total-pro">—</span>
+                        </div>
+                    </div>
+
+                    <div class="roi-bar-compare">
+                        <h4>10-Year Total Cost Comparison</h4>
+                        <div class="roi-bar">
+                            <div class="roi-bar-label">Cheap Sub</div>
+                            <div class="roi-bar-track">
+                                <div class="roi-bar-fill cheap" id="bar-cheap"></div>
+                            </div>
+                        </div>
+                        <div class="roi-bar">
+                            <div class="roi-bar-label">Pro Court</div>
+                            <div class="roi-bar-track">
+                                <div class="roi-bar-fill pro" id="bar-pro"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="roi-cta">
+                        <p>The numbers speak for themselves.</p>
+                        <a href="#quote" class="btn btn-primary">Request a Real Bid</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Request Form -->
+    <section class="quote-form-section" id="quote">
+        <div class="container">
+            <div class="section-label">Request a Bid</div>
+            <div class="section-title">Let's Get You a Number</div>
+            <div class="section-subtitle">Send us the basics and we'll have a detailed bid back to you within 48 hours.</div>
+            <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-row">
+                    <div>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Matt Johnson" required>
+                    </div>
+                    <div>
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" placeholder="Fazzon Construction" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="matt@fazzon.com" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(512) 555-0100">
+                    </div>
+                </div>
+                <div>
+                    <label for="court-type">Court Type</label>
+                    <select id="court-type" name="court_type" required>
+                        <option value="" disabled selected>Select court type</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="pickleball">Pickleball</option>
+                        <option value="multi-sport">Multi-Sport</option>
+                        <option value="resurfacing">Resurfacing / Recoating</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="details">Project Details</label>
+                    <textarea id="details" name="details" placeholder="Number of courts, dimensions, project timeline, location — whatever you've got."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Bid Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ROI Calculator Script -->
+    <script>
+    (function() {
+        var courtsInput = document.getElementById('roi-courts');
+        var courtsDisplay = document.getElementById('roi-courts-display');
+        var typeInput = document.getElementById('roi-type');
+        var cheapBidInput = document.getElementById('roi-cheap-bid');
+        var proBidInput = document.getElementById('roi-pro-bid');
+        var projectsInput = document.getElementById('roi-projects');
+        var projectsDisplay = document.getElementById('roi-projects-display');
+
+        // Assumptions from PRD
+        var CALLBACK_COST = 5000;   // cost to fix a failed surface
+        var CHEAP_CALLBACK_RATE = 0.40;  // 40% of cheap jobs need a callback
+        var PRO_CALLBACK_RATE = 0.05;
+        var DELAY_COST_PER_DAY = 1500;   // GC carrying cost per day
+        var CHEAP_DELAY_DAYS = 3;
+        var CHEAP_DELAY_RATE = 0.30;     // 30% of cheap sub projects have delays
+        var PRO_DELAY_DAYS = 0.5;
+        var PRO_DELAY_RATE = 0.05;
+        var CHEAP_CO_RATE = 0.25;        // 25% chance of change order
+        var PRO_CO_RATE = 0.05;
+        var CO_AVG_COST = 2000;
+        var RESURFACE_COST = 5000;       // per court
+
+        function fmt(n) {
+            return '$' + Math.round(n).toLocaleString('en-US');
+        }
+
+        function calculate() {
+            var courts = parseInt(courtsInput.value);
+            var cheapBid = parseFloat(cheapBidInput.value) || 6000;
+            var proBid = parseFloat(proBidInput.value) || 10000;
+            var projects = parseInt(projectsInput.value);
+
+            courtsDisplay.textContent = courts;
+            projectsDisplay.textContent = projects;
+
+            // --- PER PROJECT COSTS ---
+            var cheapInstall = cheapBid * courts;
+            var proInstall = proBid * courts;
+
+            // Expected callback cost per project
+            var cheapCallback = courts * CALLBACK_COST * CHEAP_CALLBACK_RATE;
+            var proCallback = courts * CALLBACK_COST * PRO_CALLBACK_RATE;
+
+            // Expected delay cost per project
+            var cheapDelay = CHEAP_DELAY_DAYS * DELAY_COST_PER_DAY * CHEAP_DELAY_RATE;
+            var proDelay = PRO_DELAY_DAYS * DELAY_COST_PER_DAY * PRO_DELAY_RATE;
+
+            // Expected change order cost per project
+            var cheapCO = courts * CO_AVG_COST * CHEAP_CO_RATE;
+            var proCO = courts * CO_AVG_COST * PRO_CO_RATE;
+
+            // Resurfacing per project over 10 years:
+            // Cheap surface lasts ~5 years -> 1 resurface per court in 10 years
+            // Acrytech lasts ~10 years -> 0 resurfaces
+            var cheapResurface = courts * RESURFACE_COST * 1;
+            var proResurface = 0;
+
+            // --- SCALE TO 10 YEARS ---
+            // projects/year * 10 years = total projects
+            var totalProjects = projects * 10;
+
+            // Install, callbacks, delays, COs happen on every project
+            var cheapInstall10 = cheapInstall * totalProjects;
+            var proInstall10 = proInstall * totalProjects;
+            var cheapCallback10 = cheapCallback * totalProjects;
+            var proCallback10 = proCallback * totalProjects;
+            var cheapDelay10 = cheapDelay * totalProjects;
+            var proDelay10 = proDelay * totalProjects;
+            var cheapCO10 = cheapCO * totalProjects;
+            var proCO10 = proCO * totalProjects;
+
+            // Resurfacing: each project's courts get resurfaced once (cheap) or zero (pro)
+            var cheapResurface10 = cheapResurface * totalProjects;
+            var proResurface10 = 0;
+
+            var cheapTotal = cheapInstall10 + cheapCallback10 + cheapDelay10 + cheapCO10 + cheapResurface10;
+            var proTotal = proInstall10 + proCallback10 + proDelay10 + proCO10 + proResurface10;
+
+            var savings = cheapTotal - proTotal;
+
+            // Update hero number
+            document.getElementById('roi-savings').textContent = fmt(savings);
+
+            // Update breakdown table
+            document.getElementById('row-install-cheap').textContent = fmt(cheapInstall10);
+            document.getElementById('row-install-pro').textContent = fmt(proInstall10);
+            document.getElementById('row-callback-cheap').textContent = fmt(cheapCallback10);
+            document.getElementById('row-callback-pro').textContent = fmt(proCallback10);
+            document.getElementById('row-delay-cheap').textContent = fmt(cheapDelay10);
+            document.getElementById('row-delay-pro').textContent = fmt(proDelay10);
+            document.getElementById('row-co-cheap').textContent = fmt(cheapCO10);
+            document.getElementById('row-co-pro').textContent = fmt(proCO10);
+            document.getElementById('row-resurface-cheap').textContent = fmt(cheapResurface10);
+            document.getElementById('row-resurface-pro').textContent = fmt(proResurface10);
+            document.getElementById('row-total-cheap').textContent = fmt(cheapTotal);
+            document.getElementById('row-total-pro').textContent = fmt(proTotal);
+
+            // Update comparison bars
+            var maxVal = Math.max(cheapTotal, proTotal);
+            var cheapPct = maxVal > 0 ? (cheapTotal / maxVal) * 100 : 0;
+            var proPct = maxVal > 0 ? (proTotal / maxVal) * 100 : 0;
+
+            var barCheap = document.getElementById('bar-cheap');
+            var barPro = document.getElementById('bar-pro');
+            barCheap.style.width = cheapPct + '%';
+            barCheap.textContent = fmt(cheapTotal);
+            barPro.style.width = proPct + '%';
+            barPro.textContent = fmt(proTotal);
+        }
+
+        // Recalculate on any input change
+        [courtsInput, typeInput, cheapBidInput, proBidInput, projectsInput].forEach(function(el) {
+            el.addEventListener('input', calculate);
+        });
+
+        // Initial calculation
+        calculate();
+    })();
+    </script>
 
     <!-- Footer -->
     <footer>
-        &copy; 2026 Pro Court Surfaces. All rights reserved.
+        <p>&copy; 2026 Pro Court Surfaces. Sport Court Surfacing Subcontractor &bull; Central Texas</p>
     </footer>
 
 </body>
